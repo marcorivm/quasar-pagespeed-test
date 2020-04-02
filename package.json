@@ -8,7 +8,13 @@
   "author": "marcorivm <marcorivm@gmail.com>",
   "private": true,
   "scripts": {
+    "dev": "quasar dev -m pwa",
+    "build": "quasar build",
+    "build:pwa": "quasar build -m pwa",
+    "build:pwa-dev": "quasar build -m pwa -d",
     "lint": "eslint --ext .js,.vue src",
+    "publish": "quasar build -P -m pwa",
+    "ssr": "quasar build -m ssr",
     "test": "echo \"No test specified\" && exit 0"
   },
   "dependencies": {
